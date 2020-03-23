@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='assets/bootstrap/css/bootstrap.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <div class="container">
+        <div class="card mt-3"> 
+          <div class="row no-gutters">
+        <!--      <div class="col-md-12"> -->
+              <div class="col-md-3">
+               <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Circle-icons-profile.svg/1024px-Circle-icons-profile.svg.png" class="rounded-circle" height="200pt" width="200pt" alt="...">
+              </div>
+            
+      <meta charset="utf-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">    
+          <link rel="stylesheet" href="aset/bootstrap/css/bootstrap.min.css" 
+          type="text/css"/> 
+          <link rel="stylesheet" href="aset/fontawesome/css/all.css" type="text/css"/>
+          <script type="text/javascript" src="js/jquery.js"></script>
+          <script type="text/javascript" src="js/bootstrap.js"></script>
+      </head>
+          <body>
+            <style type="text/css">
+              .satu {
+              font-size: 32pt;
+              }
+              .dua {
+              font-size: 16pt;
+              }
+           </style>
+              
+                  </p>
+                      <div class="col-md-8 text-black rounded m-2"> <!-- kolom kedua berisi profil singkat -->
+                          <p class="dua text-left mt-4">
+                             Nama : Rivaldo Avila Cantona
+                          </p>
+                        <p class="dua text-left mt-4">
+                             NIM   : 201701056
+                          </p>
+                          <p class="dua text-left">
+                            Email : rivaldoavila90@gmail.com
+                          </p>
+                          <p class="dua text-left">
+                            Phone :  081329881222
+                          </p>  
+                        <p class="dua text-left">
+                            Alamat : Jl.Mutiara No 27 Ledug
+                          </p>
+              </div>
+      <div class="card-group">
+        <div class="card">
+          
+          <div class="card-body">
+            <h5 class="card-title">Nilai Rata-rata Ujian : </h5>
+            <p class="card-text">
+            <div id="tulis1"></div> 
+            <div id="tulis2"></div>
+            <div id="praktek"></div>
+            <h3><div id="nilaiujian"></div></h3>
+            </p>
+          
+           
+          </div>
+        </div>
+        <div class="card">
+          
+          <div class="card-body">
+            <h5 class="card-title">Score TOEFL :</h5>
+            <p class="card-text">
+            <h3><div id="toefl1"></div></h3>
+            <div id="toefl"></div></p>
+          
+            
+          </div>
+        </div>
+        <div class="card">
+          
+          <div class="card-body">
+            <h5 class="card-title">Status Beasiswa :</h5>
+            <p class="card-text">
+            <div id="beasiswa"></div> </p>
+          <h5><div id="nilai"></div></h5>
+          <p class="card-text"><small class="text-muted">Last updated 1 mins ago</small></p>
+          </div>
+        </div>
+      </div>
+
+      <script>
+
+var ujiantulis1= document.getElementById("tulis1");
+var ujiantulis2 = document.getElementById("tulis2");
+var ujianpraktek = document.getElementById("praktek");
+var hasilujian  = document.getElementById("nilaiujian");
+
+var tulis1 = 88;
+var tulis2 = 90;
+var praktek = 90;
+var nilaiujian = (tulis1 + tulis2 + praktek) / 3;
+
+ujiantulis1.innerHTML = "Nilai Ujian Tulis UTS : " + tulis1;
+ujiantulis2.innerHTML = "Nilai Ujian Tulis UAS : " + tulis2;
+ujianpraktek.innerHTML = "Nilai Ujian Praktek     : " + praktek;
+hasilujian.innerHTML = "Nilai Rata-rata Ujian : " + nilaiujian;
+
+
+var nilaitoefl= document.getElementById("toefl");
+var scoretoefl= document.getElementById("toefl1");
+var toefl = 500;
+var toefl1 = 500;
+
+
+if(toefl >= 500){
+ nilaitoefl.innerHTML = "Nilai 100";
+}
+else if(toefl > 450){
+  nilaitoefl.innerHTML = "Nilai 80";
+}
+else if(toefl < 450){
+  nilaitoefl.innerHTML = "Nilai 50";
+}
+
+scoretoefl.innerHTML = "Score : " + toefl1;
+
+var statusbeasiswa= document.getElementById("beasiswa");
+
+var nilaitoefl = 80;
+var beasiswa = (nilaiujian + nilaitoefl) / 2;
+
+var statusbsw= document.getElementById("nilai");
+
+var nilai= 80 
+if(nilai > 90){
+ statusbsw.innerHTML = "LULUS";
+}
+else if(nilai < 85){
+  statusbsw.innerHTML = "TIDAK LULUS";
+}
+statusbeasiswa.innerHTML = "Nilai : " + beasiswa;
+
+S
+      </script>
+    
+</body>
+</html>
